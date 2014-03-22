@@ -1,0 +1,23 @@
+include header.jade
+
+for post in posts
+  article
+    div.container
+      h2
+        a(href=post.url)= post.title
+      div.copy= post.content(250)
+      time
+        a(href=post.url, data-time=post.date.isoformat())= post.date.format('%B %d, %Y')
+
+if paginator.has_pre or paginator.has_next
+  div.pagination
+    ul
+      if paginator.has_pre
+        li
+          a(href=href=paginator.pre_page_url) ← Previous Page
+      if paginator.has_next
+        li
+          a(href=href=paginator.next_page_url) Next Page →
+
+
+include footer.jade

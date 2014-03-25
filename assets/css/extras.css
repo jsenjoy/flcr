@@ -1,0 +1,61 @@
+/* Fonts */
+@font-face {
+  font-family: 'Roboto Slab';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Roboto Slab Light'), local('RobotoSlab-Light'), url("/template/assets/font/roboto-300.woff") format('woff');
+}
+@font-face {
+  font-family: 'Roboto Slab';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Roboto Slab Bold'), local('RobotoSlab-Bold'), url("/template/assets/font/css/roboto-700.woff") format('woff');
+}
+
+body {
+  font-family: 'Roboto Slab', 'Hiragino sans GB', 'MicroSoft Yahei', serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Roboto Slab', 'Hiragino sans GB', 'MicroSoft Yahei', serif;
+}
+
+pre {
+  font-family: Monaco, "Ubuntu Mono", "Droid Sans Mono", Consolas, serif;
+  font-size: 16px;
+  font-size: 1.6rem;
+  line-height: .8;
+  margin-bottom: .6em;
+  padding: .8em;
+  overflow: auto;
+  max-width: 100%;
+  background-color: #f3f4dd;
+  border-radius:10px;
+}
+
+pre code{
+  background: transparent;
+  font-weight: normal;
+  color:#50535a;
+}
+
+code, kbd, tt, var {
+  font-size: 16px;
+  font-family: Monaco, "Ubuntu Mono", "Droid Sans Mono", Consolas, serif;
+}
+
+code{
+  display:inline;
+  -moz-border-radius:5px;
+  -webkit-border-radius:5px;
+  -o-border-radius:5px;
+  border-radius:5px;
+  color:#111;
+  word-break: break-all;
+  word-wrap: break-word;
+  font-weight: bold;
+}
+
+footer p {
+  margin: 0;
+}
